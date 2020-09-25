@@ -1,0 +1,27 @@
+The file format is exactly as described in the problem statement. Each folder has 2 notebooks. One for generating the predictions, and the other for error analysis.
+
+HMM
+
+Notebooks - HMM.ipynb, Error reporting and analysis.ipynb
+
+The parameters to be set are division(line 23) - indicating for which cross validation do we need to run the code. The libraries needed are nltk, pandas and numpy. The code starts running and after every 200 sentences, a dataframe containing the word, actual tag and predicted tag is stored in the directory. 
+
+Then, these notebooks are read by Error reporting and analysis.ipynb to generate accuracy, confusion matrix and per pos accuracy/recall. The parent_path must be set to the directory where the dataframes were stored. For ease, a sample dataframe is stored in the folder. 
+
+
+SVM
+
+Notebooks - SVM.ipynb, Error reporting and analysis.ipynb
+
+The parameters to be set are division(line 21) - indicating for which cross validation do we need to run the code. The libraries needed are nltk, pandas, numpy, statsmodels, matplotlib, gensim and sklearn. Then the all the cells need to be run sequentially. The code starts running, and after the SVM training and prediction is complete, a dataframe containing the word, actual tag and predicted tag is stored in the directory. 
+
+Then, these notebooks are read by Error reporting and analysis.ipynb to generate accuracy, confusion matrix and per pos accuracy/recall. The parent_path must be set to the directory where the dataframes were stored. For ease, a sample dataframe is stored in the folder. 
+
+Bi-LSTM
+
+Notebooks - Bi-LSTM.ipynb , Error reporting and analysis.ipynb
+Libraries needed are nltk, pandas, numpy, sklearn, Keras
+On Division six of notebook we have divided the dataset into 5 folds - train0 to train5,test0 to test5 for tags sequences and sentences each. For calculating accuracy and prediction of each we have to change the training and test data into division six of notebooks by respective folder name. In prediction on test data section of notebook we have a dataframe containing words, true label and predicted label. 
+
+Then, these notebooks are read by Error reporting and analysis.ipynb to generate accuracy, confusion matrix and per pos accuracy/recall. First store the dataframes for each fold and then the parent_path must be set to the directory where the dataframes were stored. For ease, a sample dataframe is stored in the folder. 
+
